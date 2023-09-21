@@ -29,6 +29,9 @@ const list = [
 ];
 const isClose = ref(true)
 const name = ref('小明')
+function goRouter(item){
+  router.push(item.path)
+}
 </script>
 <template>
   <div class="header">
@@ -39,7 +42,7 @@ const name = ref('小明')
       <img src="@/assets/logo.png" alt="" />
     </h1>
     <div class="nav">
-      <div v-for="item in list" class="nav-li" :class="{ active: route.path === item.path }">
+      <div v-for="item in list" class="nav-li" :class="{ active: route.path === item.path }" @click="goRouter(item)">
         {{ item.name }}
       </div>
     </div>

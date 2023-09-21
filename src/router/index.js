@@ -11,12 +11,27 @@ const routes = [
         path: "/home",
         name: "Home",
         component: () => import("@/views/Home/index.vue"),
+      },  
+      {
+        path: "/whisper",
+        name: "Whisper",
+        component: () => import("@/views/Whisper/index.vue"),
       },
-      // {
-      //   path: "/helloWorld2",
-      //   name: "HelloWorld2",
-      //   component: () => import("../components/HelloWorld2.vue"),
-      // },
+      {
+        path: "/leacots",
+        name: "Leacots",
+        component: () => import("@/views/Leacots/index.vue"),
+      },
+      {
+        path: "/album",
+        name: "Album",
+        component: () => import("@/views/Album/index.vue"),
+      },
+      {
+        path: "/about",
+        name: "About",
+        component: () => import("@/views/About/index.vue"),
+      },
     ],
   },
   // {
